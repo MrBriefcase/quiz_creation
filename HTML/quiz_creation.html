@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Make-A-Quiz
+        </title>
+        
+        <!-- Adding Bootstrap and my css. -->
+        <link type='text/css' rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css'/>
+        <link type='text/css' rel='stylesheet' href='../CSS/style.css'/>
+    </head>
+    
+    <body class='text-center'>
+        <!--    SETUP VISUAL ELEMENTS    -->
+        <h1>Create your own questions!</h1>
+        <h2>
+            Write your question and possible answers.<br/>
+            Select your intended correct answer.<br/>
+            Then submit.
+        </h2>
+        
+        <br/>
+        <input id='q' type='text' placeholder='Write your question here'/>
+        <br/>
+        <br/>
+        <span>A</span>
+        <input id='select1' type='radio' name='answer' value='a'/>
+        <input id='a1' type='text' placeholder='potential answer' />
+        <br/>
+        <span>B</span>
+        <input id='select2' type='radio' name='answer' value='b'/>
+        <input id='a2' type='text' placeholder='potential answer' />
+        <br/>
+        <span>C</span>
+        <input id='select3' type='radio' name='answer' value='c'/>
+        <input id='a3' type='text' placeholder='potential answer' />
+        <br/>
+        <span>D</span>
+        <input id='select4' type='radio' name='answer' value='d'/>
+        <input id='a4' type='text' placeholder='potential answer' />
+        
+        <br/>
+        <br/>
+        <button id='btn'>Submit Your Question</button>
+        <br/>
+        <h2 id='result'></h2>
+        
+        <script src='../JS/script.js'></script>
+    </body>
+</html>
