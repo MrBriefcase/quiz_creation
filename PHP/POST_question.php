@@ -32,16 +32,16 @@
         $numholder = $latest[0]['ID'];
         
         // insert potential answers into answer table
-        $sql = "INSERT INTO answer (the_answer, q_link) VALUES ('$a1', $numholder);";
+        $sql = "INSERT INTO answer (the_answer, q_link, ABCD) VALUES ('$a1', $numholder, 'a');";
         $statement = $conn->prepare($sql);
         $statement->execute();
-        $sql = "INSERT INTO answer (the_answer, q_link) VALUES ('$a2', $numholder);";
+        $sql = "INSERT INTO answer (the_answer, q_link, ABCD) VALUES ('$a2', $numholder, 'b');";
         $statement = $conn->prepare($sql);
         $statement->execute();
-        $sql = "INSERT INTO answer (the_answer, q_link) VALUES ('$a3', $numholder);";
+        $sql = "INSERT INTO answer (the_answer, q_link, ABCD) VALUES ('$a3', $numholder, 'c');";
         $statement = $conn->prepare($sql);
         $statement->execute();
-        $sql = "INSERT INTO answer (the_answer, q_link) VALUES ('$a4', $numholder);";
+        $sql = "INSERT INTO answer (the_answer, q_link, ABCD) VALUES ('$a4', $numholder, 'd');";
         $statement = $conn->prepare($sql);
         $statement->execute();
         
